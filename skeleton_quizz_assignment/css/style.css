@@ -1,0 +1,10 @@
+#answerDiv {
+    background-color:lightgrey;
+    display: flex;
+    flex-direction: row;
+}
+
+.answerButton {
+    margin-left : 40px;
+    margin-right : 40px;
+}
