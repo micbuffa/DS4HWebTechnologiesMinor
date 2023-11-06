@@ -44,7 +44,7 @@ function displayQuestion(currentQuestion) {
 
     // we assume all questions are "simpleChoice"
 
-    
+
     // we get the div that will be used to display the question
     let questionDiv = document.querySelector('#questionDiv');
     // We clear the div
@@ -65,6 +65,11 @@ function displayQuestion(currentQuestion) {
     questionDiv.append(answerDiv);
     
     answerDiv.innerHTML = "";
+    /* we could have written the for loop below like that 
+    tableauQuestions.forEach((question, index) => {
+    });
+    */
+
     for (let i = 0; i < tableauQuestions[currentQuestion].answers.length; i++) {
         let answerButton = document.createElement('button');
         answerButton.id = i;
